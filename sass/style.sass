@@ -1,0 +1,68 @@
+
+   @import var
+
+   header
+      text-align: center
+      margin-bottom: 2%
+      font-size: 1.8rem
+      color: $head
+
+   main
+      display: block
+      width: 70%
+      margin: 0 auto
+      font-size: 1rem
+
+      h2
+         margin: 6% 0 2%
+         text-align: center
+         font-size: 1.6rem
+         color: $head
+
+      code
+         display: inline-block
+         margin: 1rem 0
+         background: $seconed
+         padding: 1rem 1.6rem
+         font-size: .8rem
+         color: $head
+
+      .content
+         margin: 2rem 0
+         display: flex
+         justify-content: space-between
+
+         input
+            margin: 4rem
+            width: 30%
+            height: 2rem
+            padding: .6rem 1rem
+            background: $seconed
+            font-size: .8rem
+            border: none
+            outline: none
+            color: $head
+
+            &:focus
+               outline: $blue solid .2rem
+               border-radius: .3125rem
+
+
+   footer
+      opacity: 1
+      z-index: 2
+      position: absolute
+      bottom: 0
+      right: 1rem
+      text-align: center
+      padding: 1rem
+      color: #63686c
+
+      a
+         color: $blue
+         text-decoration: none
+         transition: 200ms
+
+         &:hover
+            opacity: .6
+            

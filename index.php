@@ -11,7 +11,7 @@ $text = $width . "x" . $height;
 $font_size = 32;
 do {
   $font_size--;
-  $text_box = imagettfbbox($font_size, 0, 'arial.ttf', $text);
+  $text_box = imagettfbbox($font_size, 0, 'font/arial.ttf', $text);
 } while ($text_box[2] > $width - 10 || $text_box[3] > $height - 10);
 
 $text_width = $text_box[2] - $text_box[0];
