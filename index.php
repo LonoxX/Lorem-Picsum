@@ -1,6 +1,4 @@
 <?php
-// 400x400?text=1337&tc=black&bgc=grey&format=gif
-
 $format = isset($_GET['format']) && in_array($_GET['format'], ['jpg', 'png', 'webp', 'gif']) ? $_GET['format'] : 'png';
 header("Content-Type: image/{$format}");
 list($width, $height) = explode('x', $_GET['size']);
