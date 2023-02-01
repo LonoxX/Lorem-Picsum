@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  color: #d5d5d5;
+  color: #8b949e;
   font-family: Roboto Condensed, sans-serif;
   background: #0d1117;
 }
@@ -25,6 +25,11 @@ body {
   background: #1D9BF0;
 }
 
+@font-face {
+  font-family: SourceCodePro;
+  src: url(../font/SourceCodePro.ttf);
+  font-display: swap;
+}
 header {
   text-align: center;
   margin-bottom: 2%;
@@ -76,12 +81,14 @@ main .content input:focus {
 footer {
   opacity: 1;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 1rem;
   text-align: center;
   padding: 1rem;
-  color: #63686c;
+  font-size: 0.8rem;
+  color: #8b949e;
+  font-family: SourceCodePro;
 }
 footer a {
   color: #1D9BF0;
