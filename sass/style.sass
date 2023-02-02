@@ -32,20 +32,70 @@
          display: flex
          justify-content: space-between
 
-         input
-            margin: 4rem
-            width: 30%
-            height: 2rem
-            padding: .6rem 1rem
-            background: $seconed
-            font-size: .8rem
-            border: none
-            outline: none
-            color: $head
+         img
+            max-width: 50%
+            max-height: 25%
 
-            &:focus
-               outline: $blue solid .2rem
-               border-radius: .3125rem
+         .input-group
+            width: 30%
+            margin: 4rem
+            display: block
+
+            input
+               width: 100%
+               height: 2.2rem
+               background: $seconed
+               font-size: .8rem
+               border: none
+               outline: none
+               color: $head
+
+               &[type="text"]
+                  padding: .6rem 1rem
+
+                  &:focus
+                     border: $blue solid .2rem
+               
+               &[type="color"]
+                  padding: .2rem .4rem
+
+                  &:focus
+                     border: $blue solid .2rem
+                     padding: 0 .2rem
+
+            #image-link
+               color: $text
+
+            select
+               width: 100%
+               height: 2.2rem
+               background: $seconed
+               font-size: .8rem
+               border: 1px solid $seconed
+               outline: none
+               color: $head
+               padding: .2rem .4rem
+
+               &:focus
+                  border: $blue solid .2rem
+                  padding: 0 .2rem
+            
+            button
+               margin: 1rem 0
+               width: 100%
+               height: 2.4rem
+               background: $seconed
+               font-size: .8rem
+               border: none
+               outline: none
+               color: $head
+               transition: 200ms
+
+               &:hover, &:focus
+                  border: $blue solid .2rem
+                  padding: 0 .2rem
+                  border-radius: .3125rem
+
 
 
    footer
